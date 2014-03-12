@@ -149,6 +149,7 @@ id (^blockName2)(id) = ^ id (id args) {
 
 ## Literals
 
+ * Prefer string constants to literals when providing keys or key paths to methods.
  * Avoid making numbers a specific type unless necessary (for example, prefer `5` to `5.0`, and `5.3` to `5.3f`).
  * The contents of array and dictionary literals should have a space on both sides.
  * Dictionary literals should have no space between the key and the colon, and a single space between colon and value.
@@ -179,6 +180,7 @@ NSDictionary *keyedStuff = @{
 
 ## Categories
 
+ * Prefer categories on `Foundation` classes to helper methods.
  * Categories should be named for the sort of functionality they provide. Don't create umbrella categories.
  * Category methods should always be prefixed.
  * If you need to expose private methods for subclasses or unit testing, create a class extension named `Class+Private`.
